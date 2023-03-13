@@ -32,9 +32,15 @@ export const StyledButtonCSS = css<IStyledButtonProps>`
           padding: 0 20px;
           height: 40px;
         `;
+        default:
+          return css`
+          padding: 0 30px;
+          height: 60px;
+        `;
     }
   }}
 
+  // eslint-disable-next-line consistent-return
   ${({ theme, $buttonStyle }) => {
     switch ($buttonStyle) {
       case 'green':

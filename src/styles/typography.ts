@@ -43,6 +43,12 @@ export const StyledTitle = styled(BaseTitle)<IStyledTitleProps>`
           font-size: 1rem;
           font-weight: 400;
         `;
+
+      default:
+        return css`
+          font-size: 1.55rem;
+          font-weight: 700;
+        `;
     }
   }}
 `;
